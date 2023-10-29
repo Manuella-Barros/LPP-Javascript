@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:ital,wght@0,300;0,500;0,900;1,300;1,500;1,900&display=swap"
+        rel="stylesheet">
+    <title>Baralho</title>
+</head>
+
+<body>
+
+
+    <section id="container_Exp">
+        <div>
+            <h1>Baralho</h1>
+
+            <p>Insira uma quantidade de cartas para saber
+                quais nipes e qual a quantia de caras faltam
+                para completar o baralho.</p>
+        </div>
+
+        <div>
+            <h2>Nipes Válidos</h2>
+
+            <p>Cada nipe é representado por sua primeira
+                letra. <br> Os naipes válidos são:</p>
+
+            <ul>
+                <li>Copas</li>
+                <li>Espadas</li>
+                <li>Ouros</li>
+                <li>Paus</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Digitos válidos</h2>
+            <p>Os dígitos vão de 01 até 13.</p>
+        </div>
+
+
+        <div>
+            <h2>Formato Final</h2>
+            <p>O formato Final deve ser DDN - Digito Digito Naipe.
+                Você pode verificar várias cartas ao mesmo tempo,
+                basta colocá-las seguidas:</p>
+
+            <p>Exemplo: <b>01p02u08e</b></p>
+        </div>
+    </section>
+
+    <section id="container_form">
+        <form>
+            <label for="cartas">Insira as cartas:</label>
+            <input type="text" name="cartas" id="cartas">
+
+            <button id="button">Verificar</button>
+        </form>
+
+        <p id="resultado" class="show"></p>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
